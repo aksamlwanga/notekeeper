@@ -1,4 +1,3 @@
-import react from "react"
 import React, { useContext } from "react";
 import { UserContext } from "../Providers/UserProvider";
 import '../pages/ProfilePage'
@@ -15,7 +14,7 @@ function Application() {
         user ?
             <Router>
                 <Switch>
-                    <Route exact path="/"
+                    <Route path="/"
                         component={ProfilePage}
                     />
                     <Route component={Error} />
